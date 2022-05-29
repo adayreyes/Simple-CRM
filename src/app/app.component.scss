@@ -1,0 +1,42 @@
+.sidenav-container{
+    height: 100vh;
+    width: 100%;
+}
+
+.sidenav{
+    font-size: 1.1rem;
+    width: 300px;
+
+    div:nth-child(2){
+        margin-top: 2rem;
+    }
+    div a{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        text-decoration: none;
+        color: black;
+        
+    }
+    .hover{
+        transition: all 125ms ease;
+        cursor: pointer;
+        &:hover{
+            background-color: rgba(128, 128, 128, 0.238);
+
+        }
+    }
+
+    .logo-container{
+        padding: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.423);
+    }
+
+}
+router-outlet{
+    position: relative;
+    padding: 2rem;
+}
+
+
