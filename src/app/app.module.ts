@@ -14,6 +14,8 @@ import { AddUserDialogComponent } from './add-user-dialog/add-user-dialog.compon
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatNativeDateModule} from '@angular/material/core';
+import {matDatepickerAnimations, MatDatepickerModule} from '@angular/material/datepicker';
 
 
 @NgModule({
@@ -34,7 +36,10 @@ import { MatInputModule } from '@angular/material/input';
     AppRoutingModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+    
     
     
 
