@@ -18,6 +18,7 @@ import {MatNativeDateModule} from '@angular/material/core';
 import { MatDatepickerModule} from '@angular/material/datepicker';
 import { FormsModule } from '@angular/forms';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatDatepickerModule,
     MatNativeDateModule,
     FormsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatCardModule
     
     
     

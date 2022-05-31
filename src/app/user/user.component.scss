@@ -4,3 +4,26 @@
    right: 3rem;
 
 }
+
+mat-card{
+   display: flex;
+   max-width: 1000px;
+}
+
+table{
+   width: 100%;
+   border-collapse: collapse;
+   tr{
+      height: 60px;
+   }
+   td,th{
+      text-align: start;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   }
+   tr{
+      text-align: start;
+      &:last-child td{
+         border-bottom: unset;
+      }
+   }
+}
