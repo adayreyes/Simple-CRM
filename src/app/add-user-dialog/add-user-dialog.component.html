@@ -3,17 +3,17 @@
   <div>
     <mat-form-field appearance="outline">
       <mat-label>Firstname</mat-label>
-      <input matInput>
+      <input [(ngModel)]="user.firstName" matInput>
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Surname</mat-label>
-      <input matInput>
+      <input [(ngModel)]="user.lastName" matInput>
     </mat-form-field>
   </div>
   <div>
     <mat-form-field appearance="fill" class="full-width">
-      <mat-label>Birthday</mat-label>
-      <input matInput [matDatepicker]="picker" >
+      <mat-label>Birthdate</mat-label>
+      <input [(ngModel)]="birthDate" matInput [matDatepicker]="picker" >
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
@@ -21,17 +21,21 @@
   <div>
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Street + House No.</mat-label>
-      <input matInput>
+      <input [(ngModel)]="user.street" matInput>
     </mat-form-field>
   </div>
   <div>
     <mat-form-field appearance="outline">
       <mat-label>Zip code</mat-label>
-      <input matInput>
+      <input [(ngModel)]="user.zipCode" matInput>
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>City</mat-label>
-      <input matInput>
+      <input [(ngModel)]="user.city" matInput>
     </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button>Cancel</button>
+    <button mat-button (click)="saveUser()" cdkFocusInitial>Save</button>
   </div>
 </div>
