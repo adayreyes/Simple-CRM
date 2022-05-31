@@ -15,8 +15,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatNativeDateModule} from '@angular/material/core';
-import {matDatepickerAnimations, MatDatepickerModule} from '@angular/material/datepicker';
+import { MatDatepickerModule} from '@angular/material/datepicker';
 import { FormsModule } from '@angular/forms';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    FormsModule
+    FormsModule,
+    MatProgressBarModule
     
     
     
