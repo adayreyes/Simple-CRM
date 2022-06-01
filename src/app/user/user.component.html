@@ -8,28 +8,13 @@
             <th>Address</th>
             <th>City</th>
         </tr>
-        <tr>
-            <td>Aday</td>
-            <td>24</td>
-            <td>adayrexyes@gmail.com</td>
-            <td>Germaniastr 31</td>
-            <td>Berlin</td>
+        <tr *ngFor="let user of allUsers">
+            <td>{{ user.firstName }}</td>
+            <td>{{ user.lastName }}</td>
+            <td>{{ user.street }}</td>
+            <td>{{ user.zipCode }}</td>
+            <td>{{ user.city }}</td>
         </tr>
-        <tr>
-            <td>Aday</td>
-            <td>24</td>
-            <td>adayrexyes@gmail.com</td>
-            <td>Germaniastr 31</td>
-            <td>Berlin</td>
-        </tr>
-        <tr>
-            <td>Aday</td>
-            <td>24</td>
-            <td>adayrexyes@gmail.com</td>
-            <td>Germaniastr 31</td>
-            <td>Berlin</td>
-        </tr>
-
     </table>
 </mat-card>
       
